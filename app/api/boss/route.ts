@@ -2,8 +2,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getStore } from '@netlify/blobs';
 
-export const dynamic = 'force-dynamic'; // 禁止静态化
-export const revalidate = 0;            // 关闭 ISR
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 const STORE = 'boss-state';
 const KEY = 'boss';

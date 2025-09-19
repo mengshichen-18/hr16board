@@ -2,12 +2,15 @@
   "compilerOptions": {
     "jsx": "preserve",
     "allowJs": true,
-    "baseUrl": ".",                 // ✅ 关键：允许从项目根开始的绝对导入
+    "baseUrl": ".", // ✅ 关键：允许从项目根开始的绝对导入
     "paths": {
-      "components/*": ["components/*"],   // 可选：更显式
-      "@/*": ["*"]                        // 可选：如果你喜欢用 "@/..."
+      "components/*": [
+        "components/*"
+      ], // 可选：更显式
+      "@/*": [
+        "*"
+      ] // 可选：如果你喜欢用 "@/..."
     },
-
     "strict": false,
     "noEmit": true,
     "module": "esnext",
@@ -15,9 +18,19 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "skipLibCheck": true,
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "target": "ES2017",
-    "plugins": [{ "name": "next" }]
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "incremental": true,
+    "esModuleInterop": true
   },
   "include": [
     "next-env.d.ts",
@@ -27,5 +40,7 @@
     "**/*.js",
     "**/*.jsx"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

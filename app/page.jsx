@@ -1,5 +1,6 @@
 import BossToggle from 'components/BossToggle';
 import { Card } from 'components/card';
+import AutoRefresh from 'components/AutoRefresh';
 
 export default function Page() {
   return (
@@ -10,6 +11,7 @@ export default function Page() {
           无登录、无数据库。状态保存在 Netlify（Blobs），全站共享。
         </p>
       </section> */}
+      <AutoRefresh />
 
       <section className="max-w-xl">
         <Card title="当前状态">
