@@ -1,4 +1,4 @@
-import BossToggle from '../components/BossToggle';
+import BossToggle from 'components/BossToggle';
 import { Card } from 'components/card';
 
 export default function Page() {

@@ -1,35 +1,31 @@
 {
   "compilerOptions": {
-    "target": "ES2017",               // ✅ 关键：允许 JSX
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "jsx": "preserve",
     "allowJs": true,
-    "skipLibCheck": true,
+    "baseUrl": ".",                 // ✅ 关键：允许从项目根开始的绝对导入
+    "paths": {
+      "components/*": ["components/*"],   // 可选：更显式
+      "@/*": ["*"]                        // 可选：如果你喜欢用 "@/..."
+    },
+
     "strict": false,
     "noEmit": true,
-    "incremental": true,
     "module": "esnext",
-    "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "skipLibCheck": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "ES2017",
+    "plugins": [{ "name": "next" }]
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
