@@ -49,7 +49,7 @@ export default function BossToggle() {
             ? '保存中…'
             : data.boss
                 ? '酷酷来了（ON）'
-                : '酷酷不在（OFF）';
+                : '酷酷溜了（OFF）';
 
     // ✅ 按钮样式：加载/保存中用中性样式，并禁用点击
     const btnClass = loading || saving

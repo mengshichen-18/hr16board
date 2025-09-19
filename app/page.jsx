@@ -1,4 +1,5 @@
 import BossToggle from 'components/BossToggle';
+import LinToggle from 'components/LinToggle';
 import { Card } from 'components/card';
 import AutoRefresh from 'components/AutoRefresh';
 
@@ -16,6 +17,11 @@ export default function Page() {
       <section className="max-w-xl">
         <Card title="当前状态">
           <BossToggle />
+        </Card>
+      </section>
+      <section className="max-w-xl">
+        <Card title="当前状态">
+          <LinToggle />
         </Card>
       </section>
     </div>
