@@ -13,7 +13,7 @@ export default function BossToggle() {
   async function load() {
     setLoading(true);
     try {
-      const res = await fetch('/api/boss', { cache: 'no-store' });
+      const res = await fetch(`/api/boss?t=${Date.now()}`, { cache: 'no-store' });
       const json = (await res.json()) as Data;
       setData(json);
     } finally {
