@@ -31,10 +31,10 @@ export default function BossToggle() {
             });
             const json = (await res.json()) as Data;
             setData(json);
-            if (typeof window !== 'undefined') {
-                // setTimeout 让按钮文本有机会切到“保存中…”再刷新（体验更顺）
-                setTimeout(() => window.location.reload(), 0);
-            }
+            // if (typeof window !== 'undefined') {
+            //     // setTimeout 让按钮文本有机会切到“保存中…”再刷新（体验更顺）
+            //     setTimeout(() => window.location.reload(), 0);
+            // }
         } finally {
             setSaving(false);
         }
