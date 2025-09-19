@@ -15,12 +15,12 @@ export default function Page() {
       <AutoRefresh />
 
       <section className="max-w-xl">
-        <Card title="酷酷状态">
+        <Card title="酷酷当前状态（点击来修改）">
           <BossToggle />
         </Card>
       </section>
       <section className="max-w-xl">
-        <Card title="林老师状态">
+        <Card title="林老师当前状态（点击来修改）">
           <LinToggle />
         </Card>
       </section>
